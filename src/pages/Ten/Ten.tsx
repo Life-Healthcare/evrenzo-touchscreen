@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion"
 import { useContext, useEffect, useState } from "react"
 import Disclaimer from "../../components/Disclaimer"
+import Superscript from "../../components/Superscript"
 import SlideContext from "../../contexts/SlideContext"
 import useLocalStorage from "../../hooks/useLocalStorage"
 import { AnswerContext, QuestionContext } from "../Pages"
@@ -52,7 +53,7 @@ export default () => {
                                                                         setScore(score + 1)
                                                                     }
                                                                 }
-                                                            }}>{choice}</p>
+                                                            }}><span><span dangerouslySetInnerHTML={{ __html: choice}}></span>{answer !== null && choiceCorrect && <Superscript className="-translate-y-[70%]">1</Superscript>}</span></p>
                                                             { answer !== null && choiceSelected && !choiceCorrect && 
                                                             <img className="absolute right-14 top-2/4 -translate-y-2/4 mr-5 w-12 aspect-square" src="./images/cross.svg" alt="incorrect"/> }
                                                             {answer !== null && choiceCorrect &&
@@ -75,6 +76,9 @@ export default () => {
                     })}
                 </div>
             </div>
+            {answer !== null && 
+                <p className="absolute bottom-40 left-40 text-1x">1. EVRENZO EU SmPC, September 2022.</p>
+            } 
         </motion.article>
     )
 }

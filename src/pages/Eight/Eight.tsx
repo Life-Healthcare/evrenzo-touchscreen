@@ -30,7 +30,7 @@ export default () => {
             <footer className="flex justify-between items-center gap-20 text-1x text-start relative z-10">
                 <ul>
                     <li>1. EVRENZO EU SmPC, September 2022.</li>
-                    <li>2. Pollock C et al. Kidney International Reports. 2021;6(4):S108.</li>
+                    <li>2. Provenzano R et al. Nephrol Dial Transplant. 2021;36(9):1717–1730.</li>
                     <li>3. Akizawa T et al. J Am Soc Nephrol. 2020;31(7):1628–1639.</li>
                 </ul>
             </footer>

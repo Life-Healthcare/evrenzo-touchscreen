@@ -20,19 +20,19 @@
     },
         {
         "question": "What effect does EVRENZO have on use of IV iron in patients not on dialysis with anaemia of CKD?",
-        "answer": "Fewer patients treated with EVRENZO used IV iron than those on ESA",
+        "answer": "Fewer patients treated with EVRENZO used <br /> IV iron than those on ESA",
         "choices": [
-            "EVRENZO increases the requirement for IV iron compared to ESA",
+            "EVRENZO increases the requirement for IV iron <br /> compared to ESA",
             "EVRENZO reduces serum iron levels regardless of iron supplementation",
             "EVRENZO makes no difference to the requirement for IV iron",
-            "Fewer patients treated with EVRENZO used IV iron than those on ESA"
+            "Fewer patients treated with EVRENZO used <br /> IV iron than those on ESA"
         ]
     },
     {
         "question": "In patients with NDD- and IDD-CKD, how does the cardiovascular safety profile of EVRENZO compare with ESA?",
         "answer": "EVRENZO does not increase the risk of CV events in NDD and IDD patients compared to ESA",
         "choices": [
-            "EVRENZO is an erythropoiesis-stimulating agent (ESA)",
+            "EVRENZO increases the risk of CV events compared with ESA",
             "EVRENZO does not increase the risk of CV events in NDD and IDD patients compared to ESA",
             "EVRENZO increases the risk of all-cause mortality but not MACE compared with ESA",
             "Cardiovascular safety has not yet been studied in this group"
@@ -50,10 +50,10 @@
     },
     {
         "question": "What is the dosing regimen of EVRENZO?",
-        "answer": "EVRENZO should be taken three times a week (TIW), on non-consecutive days",
+        "answer": "EVRENZO should be taken three times a week (TIW), on <br /> non-consecutive days",
         "choices": [
             "EVRENZO should be taken twice daily (BD), after meals",
-            "EVRENZO should be taken three times a week (TIW), on non-consecutive days",
+            "EVRENZO should be taken three times a week (TIW), on <br /> non-consecutive days",
             "EVRENZO should be taken every day",
             "EVRENZO should be taken immediately after haemodialysis"
         ]
