@@ -21,16 +21,16 @@ export default () => {
                         className="w-[614px] h-[200px]"
                         src="./images/Logo2.svg" alt="logo" />
                     <p className="text-1x">
-                        This information is intended for international audiences.
+                        This information is intended for <br /> international audiences.
                     </p>
                     <p className="text-2x">
-                        EVRENZO (roxadustat) IS NOT APPROVED FOR USE IN THE UNITED STATES
+                        EVRENZO (roxadustat) IS NOT APPROVED FOR USE IN THE <br /> UNITED STATES
                     </p>
                 </div>
                 <p className="text-4x text-start flex flex-grow ml-40 font-normal">
                     <span
                     className="w-[1448px] font-bold-ext">
-                        EVRENZOTM is a first-in-class HIF-PHI1 that harnesses the HIF pathway<Superscript>2,3</Superscript> to mimic the effects of hypoxia3 as at high altitude
+                        EVRENZO<Superscript>TM</Superscript> is a first-in-class HIF-PHI<Superscript>1</Superscript> that harnesses the HIF pathway<Superscript>2,3</Superscript> to mimic the effects of hypoxia<Superscript>3</Superscript> as at high altitude
                     </span>
                 </p>
                 <img 
@@ -66,7 +66,7 @@ Pharmacovigilance.EST-C@astellas.com</p>
                     </div>
                     <footer className="flex flex-col gap-0 w-[1500px] font-bold2">
                         <p>
-                        In the EU, EVRENZO (roxadustat) is indicated for treatment of adult patients with symptomatic anaemia associated with chronic kidney disease (CKD).2
+                        In the EU, EVRENZO (roxadustat) is indicated for treatment of adult patients with symptomatic anaemia associated with chronic kidney disease (CKD).<Superscript>2</Superscript>
                         </p>
                         <p className="flex">
                             <span>

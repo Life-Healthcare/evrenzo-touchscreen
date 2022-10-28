@@ -21,7 +21,7 @@ export default () => {
             <section className="flex flex-col items-center grow gap-20 text-3x">
                 <div className="flex justify-start items-start w-full mt-20">
                     <div className="w-[1688px] flex flex-col grow">
-                        <h2>EEVRENZO can help adult patients with anaemia of CKD:</h2>
+                        <h2>EVRENZO can help adult patients with anaemia of CKD:</h2>
                         <img className="w-[1450px]" src="./images/8img1.png" alt="" />
                     </div>
                     <img className="w-[1450px]" src="./images/8img2.png" alt="" />
