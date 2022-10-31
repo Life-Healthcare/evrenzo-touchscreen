@@ -30,7 +30,7 @@ export default () => {
                 <p className="text-4x text-start flex flex-grow ml-40 font-normal">
                     <span
                     className="w-[1448px] font-bold-ext">
-                        EVRENZO<Superscript>TM</Superscript> is a first-in-class HIF-PHI<Superscript>1</Superscript> that harnesses the HIF pathway<Superscript>2,3</Superscript> to mimic the effects of hypoxia<Superscript>3</Superscript> as at high altitude
+                        EVRENZO<Superscript>TM</Superscript> is a first-in-class <br/> HIF-PHI<Superscript>1</Superscript> that harnesses the HIF pathway<Superscript>2,3</Superscript> to mimic the effects of hypoxia<Superscript>3</Superscript> as at high altitude
                     </span>
                 </p>
                 <img 
