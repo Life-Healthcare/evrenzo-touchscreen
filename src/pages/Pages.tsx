@@ -1,8 +1,9 @@
-import { createContext, useState } from "react"
+import { createContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import Navbar from "../components/Navbar/Navbar"
 import Triangle from "../components/Triangle"
 import useLocalStorage from "../hooks/useLocalStorage"
+import sessionManager from "../services/session-manager"
 import Eight from "./Eight/Eight"
 import Eleven from "./Eleven/Eleven"
 import Five from "./Five/Five"
@@ -22,6 +23,31 @@ export default () => {
     const { page } = useParams()
     const [question, setQuestion] = useState(0);
     const [answer, setAnswer] = useState<string | null>(null);
+    
+    useEffect(() => {
+        let timeout: number | undefined;
+        // Send sessions to server every 1 minute
+        (async function sendToServer() {
+          await sessionManager.sendToServer();
+          clearTimeout(timeout);
+          timeout = setTimeout(sendToServer, 60000);
+        })();
+        return () => clearTimeout(timeout);
+      }, []);
+
+    useEffect(() => {
+        if(page === "1") {
+            sessionManager.start();
+        }
+        
+        sessionManager.page(page!);
+
+        if(page === "11") {
+            sessionManager.end();
+        }
+    }, [page]);  
+
+
     return (
         <>
             {page === "1" && <One/>}
