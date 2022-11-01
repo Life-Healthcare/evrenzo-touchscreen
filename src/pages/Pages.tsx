@@ -23,24 +23,22 @@ export default () => {
     const { page } = useParams()
     const [question, setQuestion] = useState(0);
     const [answer, setAnswer] = useState<string | null>(null);
-    
-    useEffect(() => {
-        let timeout: number | undefined;
-        // Send sessions to server every 1 minute
-        (async function sendToServer() {
-          await sessionManager.sendToServer();
-          clearTimeout(timeout);
-          timeout = setTimeout(sendToServer, 60000);
-        })();
-        return () => clearTimeout(timeout);
-      }, []);
+    const [throttle, setThrottle] = useState(false);
 
     useEffect(() => {
         if(page === "1") {
             sessionManager.start();
         }
-        
+
         sessionManager.page(page!);
+
+        if (!throttle) {
+            setThrottle(true);
+            (async () => {
+                await sessionManager.sendToServer();
+            })();
+            setTimeout(() => setThrottle(false), 1000);
+        }
 
         if(page === "11") {
             sessionManager.end();
