@@ -47,7 +47,7 @@ export default () => {
 
 
     return (
-        <>
+        <div className="overflow-hidden">
             {page === "1" && <One/>}
             {page === "2" && <Two/>}
             {page === "3" && <Three/>}
@@ -66,6 +66,6 @@ export default () => {
             {page === "11" && <Eleven/>}
             {Number(page) > 1 &&
             <p className="absolute text-2x z-50 bottom-0 left-2/4 -translate-x-2/4 font-bold2"><Triangle/> EVRENZO™ is subject to additional monitoring.</p>}
-        </>
+        </div>
     )
 }
