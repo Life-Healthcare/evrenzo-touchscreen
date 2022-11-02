@@ -47,7 +47,7 @@ export default () => {
 
 
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden w-full h-full absolute top-0 left-0">
             {page === "1" && <One/>}
             {page === "2" && <Two/>}
             {page === "3" && <Three/>}
