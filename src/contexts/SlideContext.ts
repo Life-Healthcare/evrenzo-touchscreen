@@ -2,7 +2,7 @@ import { createContext } from "react";
 
 export const right = {
     initial: {
-        x: "100vw",
+        x: "200vw",
         transition: {
             duration: 0.4
         }
@@ -14,7 +14,7 @@ export const right = {
         }
     },
     exit: {
-        x: "-100vw",
+        x: "-200vw",
         transition: {
             duration: 0.4
         }
@@ -23,7 +23,7 @@ export const right = {
 
 export const left = {
     initial: {
-        x: "-100vw",
+        x: "-200vw",
         transition: {
             duration: 0.4
         }
@@ -35,7 +35,7 @@ export const left = {
         }
     },
     exit: {
-        x: "100vw",
+        x: "200vw",
         transition: {
             duration: 0.4
         }
