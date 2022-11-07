@@ -17,7 +17,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          rm -rf node_modules yarn.lock
+          rm -rf node_modules package.lock.json
           npm install
           PUBLIC_PATH=./ npm run build
 
